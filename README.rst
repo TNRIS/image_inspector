@@ -18,7 +18,7 @@ Image Inspector
         :alt: Updates
 
 
-Package to export exif data to a csv.
+Command line utility to export exif data to a csv.
 
 
 * Free software: MIT license
@@ -26,12 +26,37 @@ Package to export exif data to a csv.
 
 
 Features
---------
+========
 
-* TODO
+* Iterates through a base directory to find .tif files.
+* Outputs a CSV of EXIF tags for each .tif file.
+* User can specify only a set list of tags to capture.
+
+Usage
+=====
+
+Basic Usage
+.. code-block:: bash
+    image-inspector .
+
+Specifying a Directory
+.. code-block:: bash
+    image-inspector /test/sample_images
+
+Filtering Exported Fields
+.. code-block:: bash
+    image-inspector . "Image XResolution" "Image YResolution"
+
+User-defined Output File
+.. code-block:: bash
+    image-inspector . --inventory-file-name "images_2016"
+
+Overwrite Existing Inventory Files
+.. code-block:: bash
+    image-inspector . --overwrite
 
 Credits
----------
+=======
 
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
