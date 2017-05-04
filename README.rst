@@ -35,30 +35,35 @@ Features
 Usage
 =====
 
-Basic Usage
-.. code:: bash
+Basic Usage:
 
-    image-inspector .
+.. code-block:: console
 
-Specifying a Directory
-.. code:: bash
+    $ image-inspector .
 
-    image-inspector /test/sample_images
+Specifying a Directory:
 
-Filtering Exported Fields
-.. code:: bash
+.. code-block:: console
 
-    image-inspector . "Image XResolution" "Image YResolution"
+    $ image-inspector /test/sample_images
 
-User-defined Output File
-.. code:: bash
+Filtering Exported Fields:
 
-    image-inspector . --inventory-file-name "images_2016"
+.. code-block:: console
 
-Overwrite Existing Inventory Files
-.. code:: bash
+    $ image-inspector . "Image XResolution" "Image YResolution"
 
-    image-inspector . --overwrite
+User-defined Output File:
+
+.. code-block:: console
+
+    $ image-inspector . --inventory-file-name "images_2016"
+
+Overwrite Existing Inventory Files:
+
+.. code-block:: console
+
+    $ image-inspector . --overwrite
 
 Credits
 =======

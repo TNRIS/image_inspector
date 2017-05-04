@@ -32,7 +32,7 @@ You can either clone the public repository:
 
 .. code-block:: console
 
-    $ git clone git://github.com/DavidHickman/image_inspector
+    $ git clone git://github.com/TNRIS/image_inspector
 
 Or download the `tarball`_:
 
