@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='image_inspector',
-    version='0.1.3',
+    version='0.2.0',
     description="Simple utility to export exif data from tiff images to csv.",
     long_description=readme + '\n\n' + history,
     author="TNRIS",
