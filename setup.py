@@ -23,7 +23,7 @@ setup(
     version='0.1.0',
     description="Simple utility to export exif data to a csv.",
     long_description=readme + '\n\n' + history,
-    author="David Hickman",
+    author="TNRIS",
     author_email='david.hickman@twdb.texas.gov',
     url='https://github.com/TNRIS/image_inspector',
     packages=[
