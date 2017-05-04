@@ -9,7 +9,7 @@ Image Inspector
 .. image:: https://img.shields.io/travis/TNRIS/image_inspector.svg
         :target: https://travis-ci.org/TNRIS/image_inspector
 
-.. image:: https://readthedocs.org/projects/image-inspector/badge/?version=latest
+.. image:: https://readthedocs.org/projects/image-inspector/badge/
         :target: http://image-inspector.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
