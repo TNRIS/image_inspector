@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='image_inspector',
-    version='0.1.0',
+    version='0.1.1',
     description="Simple utility to export exif data to a csv.",
     long_description=readme + '\n\n' + history,
     author="TNRIS",
