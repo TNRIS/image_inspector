@@ -37,22 +37,27 @@ Usage
 
 Basic Usage
 .. code-block:: bash
+
     image-inspector .
 
 Specifying a Directory
 .. code-block:: bash
+
     image-inspector /test/sample_images
 
 Filtering Exported Fields
 .. code-block:: bash
+
     image-inspector . "Image XResolution" "Image YResolution"
 
 User-defined Output File
 .. code-block:: bash
+
     image-inspector . --inventory-file-name "images_2016"
 
 Overwrite Existing Inventory Files
 .. code-block:: bash
+
     image-inspector . --overwrite
 
 Credits
