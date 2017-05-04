@@ -13,7 +13,7 @@ Image Inspector
         :target: https://image-inspector.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-.. image:: https://pyup.io/repos/github/DavidHickman/image_inspector/shield.svg
+.. image:: https://pyup.io/repos/github/TNRIS/image_inspector/shield.svg
      :target: https://pyup.io/repos/github/TNRIS/image_inspector/
      :alt: Updates
 
