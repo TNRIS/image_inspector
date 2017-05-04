@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import click
-from image_inspector import find_images
+from . import image_inspector
 
 
 @click.command()
@@ -9,7 +9,7 @@ from image_inspector import find_images
 @click.option('--overwrite/--no-overwrite', default=False, help='Overwrite existing inventory files.')
 def inspect(image_directory, overwrite):
     """Console interface for the image-inspector tool"""
-    find_images(image_directory, overwrite=overwrite)
+    image_inspector.find_images(image_directory, overwrite=overwrite)
 
 
 if __name__ == "__main__":
