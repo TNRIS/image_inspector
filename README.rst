@@ -10,12 +10,12 @@ Image Inspector
         :target: https://travis-ci.org/TNRIS/image_inspector
 
 .. image:: https://readthedocs.org/projects/image-inspector/badge/?version=latest
-        :target: https://image-inspector.readthedocs.io/en/latest/?badge=latest
+        :target: http://image-inspector.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/TNRIS/image_inspector/shield.svg
-     :target: https://pyup.io/repos/github/TNRIS/image_inspector/
-     :alt: Updates
+        :target: https://pyup.io/repos/github/TNRIS/image_inspector/
+        :alt: Updates
 
 
 Package to export exif data to a csv.
