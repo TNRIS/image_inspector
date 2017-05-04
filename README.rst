@@ -7,14 +7,14 @@ Image Inspector
         :target: https://pypi.python.org/pypi/image_inspector
 
 .. image:: https://img.shields.io/travis/DavidHickman/image_inspector.svg
-        :target: https://travis-ci.org/DavidHickman/image_inspector
+        :target: https://travis-ci.org/TNRIS/image_inspector
 
 .. image:: https://readthedocs.org/projects/image-inspector/badge/?version=latest
         :target: https://image-inspector.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/DavidHickman/image_inspector/shield.svg
-     :target: https://pyup.io/repos/github/DavidHickman/image_inspector/
+     :target: https://pyup.io/repos/github/TNRIS/image_inspector/
      :alt: Updates
 
 
