@@ -6,7 +6,7 @@ Image Inspector
 .. image:: https://img.shields.io/pypi/v/image_inspector.svg
         :target: https://pypi.python.org/pypi/image_inspector
 
-.. image:: https://img.shields.io/travis/DavidHickman/image_inspector.svg
+.. image:: https://img.shields.io/travis/TNRIS/image_inspector.svg
         :target: https://travis-ci.org/TNRIS/image_inspector
 
 .. image:: https://readthedocs.org/projects/image-inspector/badge/?version=latest
