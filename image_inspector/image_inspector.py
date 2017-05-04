@@ -6,7 +6,7 @@ import exifread
 
 
 def find_images(base_directory, inventory_file_name="image_inventory",
-                flatten_search=False, overwrite=False):
+                tags=(), flatten_search=False, overwrite=False):
     """
     Iterate through a base directory to find all of the tif images in
     that directory and all sub-directories.
@@ -14,6 +14,7 @@ def find_images(base_directory, inventory_file_name="image_inventory",
     Args:
         base_directory (str): the path to the base directory to traverse
         inventory_file_name (str): the name of the output CSV
+        tags (list): named tags to collect, defaults to all
         flatten_search (bool): do NOT traverse sub-directories
         overwrite (bool): remove inventory file if it already exists
     """
@@ -28,11 +29,12 @@ def find_images(base_directory, inventory_file_name="image_inventory",
                 if os.path.splitext(f)[1].lower() == '.tif':
                     get_image_metadata(
                         os.path.join(root, f),
-                        image_inventory
+                        image_inventory,
+                        tags
                     )
 
 
-def get_image_metadata(file_path, csv_file):
+def get_image_metadata(file_path, csv_file, named_tags):
     """
     Function accepts an image file path and writes the image's
     tag data to a CSV file.
@@ -40,6 +42,7 @@ def get_image_metadata(file_path, csv_file):
     Args:
         file_path (str): the path to the image file
         csv_file (str): the path to the output CSV file
+        named_tags (list): named tags to collect, defaults to all
     """
 
     # Open the image file to read the exif data
@@ -53,7 +56,10 @@ def get_image_metadata(file_path, csv_file):
     fields = set()
     fields.add("Path")
     if add_header:
-        fields.update(tags.keys())
+        if named_tags:
+            fields.update(named_tags)
+        else:
+            fields.update(tags.keys())
     else:
         with open(csv_file, "rb") as header_file:
             csv_reader = csv.reader(header_file)
@@ -68,6 +74,6 @@ def get_image_metadata(file_path, csv_file):
         # Create a row that we can append data to
         image_data = {"Path": image_file.name}
         for tag in tags.keys():
-            if tag in fields:
+            if tag in fields and (not named_tags or tag in named_tags):
                 image_data[tag] = tags[tag]
         writer.writerow(image_data)

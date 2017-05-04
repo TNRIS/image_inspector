@@ -7,13 +7,14 @@ from . import image_inspector
 @click.command()
 @click.argument('image_directory',
                 type=click.Path(exists=True, file_okay=False, dir_okay=True))
+@click.argument('tags', nargs=-1)
 @click.option('--inventory-file-name', default="image_inventory",
               help='Name of the output file. default: image_inventory')
 @click.option('--overwrite/--no-overwrite', default=False,
               help='Overwrite existing inventory files.')
-def inspect(image_directory, inventory_file_name, overwrite):
+def inspect(image_directory, tags, inventory_file_name, overwrite):
     """Console interface for the image-inspector tool"""
-    image_inspector.find_images(image_directory, inventory_file_name,
+    image_inspector.find_images(image_directory, inventory_file_name, tags,
                                 overwrite=overwrite)
 
 

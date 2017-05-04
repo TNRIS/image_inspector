@@ -14,7 +14,7 @@ To install Image Inspector, run this command in your terminal:
 
     $ pip install image_inspector
 
-This is the preferred method to install Image Inspector, as it will always install the most recent stable release. 
+This is the preferred method to install Image Inspector, as it will always install the most recent stable release.
 
 If you don't have `pip`_ installed, this `Python installation guide`_ can guide
 you through the process.
@@ -38,7 +38,7 @@ Or download the `tarball`_:
 
 .. code-block:: console
 
-    $ curl  -OL https://github.com/DavidHickman/image_inspector/tarball/master
+    $ curl  -OL https://github.com/TNRIS/image_inspector/tarball/master
 
 Once you have a copy of the source, you can install it with:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/DavidHickman/image_inspector
-.. _tarball: https://github.com/DavidHickman/image_inspector/tarball/master
+.. _Github repo: https://github.com/TNRIS/image_inspector
+.. _tarball: https://github.com/TNRIS/image_inspector/tarball/master
