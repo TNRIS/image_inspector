@@ -21,7 +21,7 @@ test_requirements = [
 setup(
     name='image_inspector',
     version='0.1.3',
-    description="Simple utility to export exif data to a csv.",
+    description="Simple utility to export exif data from tiff images to csv.",
     long_description=readme + '\n\n' + history,
     author="TNRIS",
     author_email='david.hickman@twdb.texas.gov',
@@ -40,7 +40,7 @@ setup(
     install_requires=requirements,
     license="MIT license",
     zip_safe=False,
-    keywords='image_inspector',
+    keywords='TNRIS, tif, tiff, exif',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',

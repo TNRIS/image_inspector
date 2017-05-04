@@ -5,19 +5,22 @@ import csv
 import exifread
 
 
-def find_images(base_directory, flatten_search=False, overwrite=False):
+def find_images(base_directory, inventory_file_name="image_inventory",
+                flatten_search=False, overwrite=False):
     """
     Iterate through a base directory to find all of the tif images in
     that directory and all sub-directories.
 
     Args:
         base_directory (str): the path to the base directory to traverse
+        inventory_file_name (str): the name of the output CSV
         flatten_search (bool): do NOT traverse sub-directories
         overwrite (bool): remove inventory file if it already exists
     """
     for directory in os.listdir(base_directory):
         directory_path = os.path.join(base_directory, directory)
-        image_inventory = os.path.join(directory_path, "image_inventory.csv")
+        image_inventory = os.path.join(directory_path,
+                                       '{}.csv'.format(inventory_file_name))
         if os.path.exists(image_inventory) and overwrite:
             os.remove(image_inventory)
         for root, dirs, files in os.walk(directory_path):
