@@ -2,4 +2,4 @@
 
 __author__ = """TNRIS"""
 __email__ = 'david.hickman@twdb.texas.gov'
-__version__ = '0.3.2'
+__version__ = '0.3.3'
