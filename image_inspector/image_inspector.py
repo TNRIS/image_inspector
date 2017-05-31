@@ -27,10 +27,10 @@ def find_images(base_directory, inventory_file_name="image_inventory",
         directory_path = os.path.join(base_directory, directory)
 
         # Create a variable to hold the path of the output CSV
-        image_inventory = os.path.join(directory_path,
+        image_inventory = os.path.join(base_directory,
                                        '{}.csv'.format(inventory_file_name))
 
-        # Check to see if the output file aleady exists and if the overwrite
+        # Check to see if the output file already exists and if the overwrite
         # param is set to true
         if os.path.exists(image_inventory) and overwrite:
             os.remove(image_inventory)
