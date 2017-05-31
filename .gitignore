@@ -63,3 +63,7 @@ target/
 
 .idea/
 .swp
+
+.project
+.pydevproject
+.settings/
